@@ -1,0 +1,229 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>obrazki_dobre</name>
+    </assembly>
+    <members>
+        <member name="M:obrazki_dobre.Form1.popraw(System.String)">
+            <summary>
+            Funkcja poprawia podane karty, zwracajac je w formie czytanej przez funkcje rozdanie.DodajKarte()
+            </summary>
+            <returns>Symbole kart do wczytania jako string</returns>
+        </member>
+        <member name="M:obrazki_dobre.Form1.poprawblotki(System.Char[])">
+            <summary>
+            Uzupelnienie funkcji popraw
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.ZnajdzBlotke(System.Char,System.Char)">
+            <summary>
+            Funkcja znajduje wszystkie wolne blotki w podanym kolorze, a nastepnie zwraca losowa z nich
+            </summary>
+            <param name="k">Kolor w ktorym ma zostac zwrocona blotka</param>
+            <returns>Wylosowana blotka w podanym kolorze, jesli brak wolnej blotki, zwraca "x"</returns>
+        </member>
+        <member name="M:obrazki_dobre.Form1.odswiez">
+            <summary>
+            Odswieza widok
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.cofnij_Click(System.Object,System.EventArgs)">
+            <summary>
+            Znajduje na stosie "ostatnie" ostatnio dodana karte, a nastepnie usuwa ja
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.button2_Click(System.Object,System.EventArgs)">
+            <summary>
+            Czysci karty wszystkich graczy w otwartym rozdaniu
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.wylosujKarte(obrazki_dobre.Karta,System.Int32,System.Random)">
+            <summary>
+            Przydziela losowo wszystkie niewykorzystane karty
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.nowe(System.Int32)">
+            <summary>
+            Tworzy nowe rozdanie o podanym numerze
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.Nowe_Click(System.Object,System.EventArgs)">
+            <summary>
+            Przechodzi do nowego rozdania wedlug podanego numeru
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.ZapiszZmiany_Click(System.Object,System.EventArgs)">
+            <summary>
+            Zapisuje turniej do pliku XML
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.WczytajPoprzedni_Click(System.Object,System.EventArgs)">
+            <summary>
+            Wczytuje plik XML i tworzy na jego podstawie nowy turniej
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.PbnButton_Click(System.Object,System.EventArgs)">
+            <summary>
+            Generuje plik PBN, mozliwy do odczytania przez inne programy
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.NowyPlik_Click(System.Object,System.EventArgs)">
+            <summary>
+            Tworzy nowy turniej. Nie zapisuje domyslnie poprzedniego turnieju.
+            </summary>
+        </member>
+        <member name="F:obrazki_dobre.Form1.components">
+            <summary>
+            Wymagana zmienna projektanta.
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form1.Dispose(System.Boolean)">
+            <summary>
+            Wyczyść wszystkie używane zasoby.
+            </summary>
+            <param name="disposing">prawda, jeżeli zarządzane zasoby powinny zostać zlikwidowane; Fałsz w przeciwnym wypadku.</param>
+        </member>
+        <member name="M:obrazki_dobre.Form1.InitializeComponent">
+            <summary>
+            Metoda wymagana do obsługi projektanta — nie należy modyfikować
+            jej zawartości w edytorze kodu.
+            </summary>
+        </member>
+        <member name="F:obrazki_dobre.Form2.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Form2.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:obrazki_dobre.Form2.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Gracze.PodajRozklad">
+            <summary>
+            Funkcja podaje wszystkie rozmieszczone karty
+            </summary>
+            <returns>string karty w formie BPN</returns>
+        </member>
+        <member name="M:obrazki_dobre.Program.Main">
+            <summary>
+            Główny punkt wejścia dla aplikacji.
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Rozdanie.#ctor(System.Int32)">
+            <summary>
+            Tworzy nowe rozdanie o podanym numerze
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Rozdanie.#ctor(obrazki_dobre.RozdanieZapis)">
+            <summary>
+            Tworzy nowe rozdanie po odczycie pliku XML
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Rozdanie.dodajKarte(System.Char,System.Char,System.Char)">
+            <summary>
+             Funkcja dodaje nowa karte dla odpowiedniego gracza
+            </summary>
+            <param name="gracz">Gracz, ktoremu zostanie dodana karta</param>
+            <param name="kolor">Kolor dodawanej karty</param>
+            <param name="wysokosc">Wysokosc dodawanej karty</param>
+        </member>
+        <member name="M:obrazki_dobre.Rozdanie.Podajdealera">
+            <summary>
+            Funkcja podaje, ktory gracz jest dealerem w tym rozdaniu
+            </summary>
+            <returns>Oznaczenie gracza, ktory jest dealerem (N/S/E/W)</returns>
+        </member>
+        <member name="M:obrazki_dobre.Rozdanie.PodajZalozenia">
+            <summary>
+            Funkcja podaje zalozenia obowiazujace w tym rozdaniu
+            </summary>
+            <returns>Oznaczenie zalozen (NS/EW/All/None)</returns>
+        </member>
+        <member name="M:obrazki_dobre.Turniej.#ctor">
+            <summary>
+             Tworzenie nowego obiektu Turniej
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.Turniej.Sortuj">
+            <summary>
+             Funkcja sortuje kolejność rozdań w turnieju
+            </summary>
+        </member>
+        <member name="F:obrazki_dobre.UserControl1.components">
+            <summary> 
+            Wymagana zmienna projektanta.
+            </summary>
+        </member>
+        <member name="M:obrazki_dobre.UserControl1.Dispose(System.Boolean)">
+            <summary> 
+            Wyczyść wszystkie używane zasoby.
+            </summary>
+            <param name="disposing">prawda, jeżeli zarządzane zasoby powinny zostać zlikwidowane; Fałsz w przeciwnym wypadku.</param>
+        </member>
+        <member name="M:obrazki_dobre.UserControl1.InitializeComponent">
+            <summary> 
+            Metoda wymagana do obsługi projektanta — nie należy modyfikować 
+            jej zawartości w edytorze kodu.
+            </summary>
+        </member>
+        <member name="T:obrazki_dobre.Properties.Resources">
+            <summary>
+              Klasa zasobu wymagająca zdefiniowania typu do wyszukiwania zlokalizowanych ciągów itd.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.ResourceManager">
+            <summary>
+            Zwraca buforowane wystąpienie ResourceManager używane przez tę klasę.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.Culture">
+            <summary>
+              Przesłania właściwość CurrentUICulture bieżącego wątku dla wszystkich
+              przypadków przeszukiwania zasobów za pomocą tej klasy zasobów wymagającej zdefiniowania typu.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.karo">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.kier">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.pik">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.pik1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.pik2">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.trefl">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:obrazki_dobre.Properties.Resources.trefl1">
+            <summary>
+              Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+            </summary>
+        </member>
+    </members>
+</doc>

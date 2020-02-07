@@ -1,0 +1,12 @@
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\bin\Debug\obrazki_dobre.exe.config
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\bin\Debug\obrazki_dobre.exe
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\bin\Debug\obrazki_dobre.pdb
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.csprojAssemblyReference.cache
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.Form1.resources
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.Properties.Resources.resources
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.csproj.GenerateResource.cache
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.exe
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.pdb
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.UserControl1.resources
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\obj\Debug\obrazki_dobre.Form2.resources
+C:\Users\Agnieszka\Desktop\moje\obrazki_dobre\obrazki_dobre\bin\Debug\obrazki_dobre.xml

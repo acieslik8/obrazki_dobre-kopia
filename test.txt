@@ -1,0 +1,14 @@
+% PBN 1.0
+% EXPORT
+%
+[Event "17th European Youth Team Championships"]
+[Site "Antalya, Turkey TRK"]
+[Date "2000.07.06"]
+[Board "1"]
+[West "Nystrom F"]
+[North "Haraldsson S"]
+[East "Stromberg P"]
+[South "Halldorsson G"]
+[Dealer "N"]
+[Vulnerable "None"]
+[Deal "N:52.J76.KQJ874.T9 AK3.T9854.T.K832 Q976.Q.9632.QJ74 JT84.AK32.A5.A65"]
